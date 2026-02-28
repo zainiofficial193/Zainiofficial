@@ -1,0 +1,564 @@
+@media only screen and (max-width: 767px) {
+    .skills-container,.work-grid {
+        grid-template-columns:1fr
+    }
+
+     [data-scroll-container] {
+        transform: none !important;
+        transition: none !important;
+        width: 100% !important;
+        height: auto !important;
+        position: relative !important;
+    }
+    
+    body, html {
+        overflow-x: hidden !important;
+        overflow-y: auto !important; /* Browser ka default scroll allow karein */
+        height: auto !important;
+    }
+
+    .header .logo {
+        width: 50%
+    }
+
+    .header {
+        padding: 10px 15px 10px 10px
+    }
+
+    .banner-container {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        grid-gap: 20vw;
+        padding: 27vw 10vw
+    }
+
+    .white-btn-basketball-button-container svg {
+        width: 15px;
+        height: 15px;
+        border-radius: 1px
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        gap: 15px
+    }
+
+    .nav-links ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 9vw;
+        font-family: Nova-seven
+    }
+
+    .white-btn-basketball-button-container {
+        display: none;
+    }
+
+    .left-section h1 {
+        font-size: 11vw;
+        text-align: start;
+        white-space: nowrap
+    }
+
+    .about-left,.about-right,.hoby-right,.left-section,.right-hobby-caption,.right-section {
+        width: 100%
+    }
+
+    .about-wrapper {
+        flex-direction: column;
+        padding: 0 10vw
+    }
+
+    .about>h2 {
+        font-size: 10vw;
+        margin-bottom: 5vw;
+    }
+
+    .about-right>h2,
+    .about-right>h2 span,
+    .slide h2 span {
+        font-size: 8vw
+    }
+
+    .about-right>h3{
+        font-size: 4.5vw;
+    }
+
+    .titlebg h2{
+        font-size:15vw;
+    }
+    .about-left {
+        margin-bottom: 4vw
+    }
+
+    .about-right p {
+        font-size: 5vw;
+        line-height: 1.2
+    }
+
+    .hobbies-content h3,.inner-heading h3,.loader {
+        font-size: 10vw
+    }
+
+    .inner-heading p {
+        font-size: 6vw
+    }
+
+    .inner-heading {
+        margin-bottom: 10vw
+    }
+
+    .skill-image {
+        width: 25%
+    }
+
+    .skill h3 {
+        font-size: 5.5vw;
+        font-family: Nova-two
+    }
+
+    .skill p {
+        font-size: 5vw;
+        line-height: 1.2
+    }
+
+    .skill {
+        margin-bottom: 9vw
+    }
+
+    .about {
+        margin-bottom: 10vw;
+        padding: 5vw 0 30vw
+    }
+
+    .skill-wrapper {
+        margin-bottom: 20vw;
+        padding: 10vw
+    }
+
+    .work-section h3 {
+        font-size: 10vw;
+        margin-bottom: 5vw;
+    }
+
+    .work-grid {
+        grid-row-gap: 10vw
+    }
+
+    .hobbies-wrapper h2 {
+        font-size: 10vw;
+        /* width: 85%; */
+        /* margin: auto; */
+        margin-bottom: 5vw;
+    }
+
+    .hobbies-wrapper {
+        margin-bottom: 30vw
+    }
+
+    .hobbies {
+        flex-direction: column;
+        /* padding: 10vw; */
+    }
+
+    .hoby-left {
+        width: 100%;
+        margin-bottom: 10vw
+    }
+
+    .hobbies-image {
+        width: 100%;
+    }
+
+    .hobbies-content {
+        width: 35%;
+        left: 64%;
+        top: 60%
+    }
+
+    .hobbies-content p {
+        font-size: 4vw;
+        width: 290px;
+        position: relative;
+        top: -1.5vw
+    }
+
+    .inner-hobbies {
+        padding: 8px;
+        width: 25%
+    }
+
+    .hoby-right {
+        padding-left: 2vw
+    }
+
+    .right-hobby-caption h3 {
+        font-size: 4.8vw;
+        white-space: nowrap
+    }
+
+    .right-hobby-caption p {
+        font-size: 4.2vw;
+    }
+
+    .hoby-items {
+        flex-direction: column
+    }
+
+    .slide h2 {
+        word-spacing: -6px;
+        letter-spacing: 0;
+        font-size: 8vw
+    }
+
+    .contact h2 {
+        font-size: 10vw;
+        margin-bottom: 13vw
+    }
+
+    .social-icons {
+        gap: 3vw;
+        margin-bottom: 17vw;
+        width: 66%
+    }
+
+    .mail-section,.running-slider {
+        margin-bottom: 20vw
+    }
+
+    .social-icons .icons {
+        width: 17%
+    }
+
+    .icons img {
+        border-radius: 11px
+    }
+
+    .mail-section .primary a {
+        margin: 0;
+        font-size: 4.4vw;
+        grid-gap: 3vw;
+        align-items: center;
+        white-space: nowrap
+    }
+
+    .mail-section {
+        grid-gap: 6vw;
+        width: 86%;
+        padding: 25px 19px;
+        border-radius: 7px;
+        background: #fff
+    }
+
+    .mail-section .primary a img {
+        width: 10%
+    }
+
+    .slide {
+        margin: 0 30px
+    }
+
+    .contact {
+        padding: 11vw 0 6vw
+    }
+
+    .contact p {
+        font-size: 13px
+    }
+
+    .hoby-items:hover .inner-hobbies img {
+        transform: scale(1.2)
+    }
+
+    .menu-btn {
+        cursor: pointer;
+        z-index: 1101;
+        transition: .3s 0.3s;
+        color: #000;
+        display: block;
+        font-size: 7vw
+    }
+
+    .hoby-items:last-child {
+        margin-bottom: 0
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 55vh;
+        background: var(--cyan);
+        transition: .6s;
+        z-index: 1100;
+        padding-top: 20vh;
+        transform: translateX(-100%)
+    }
+
+    .nav-links.active {
+        left: 0;
+        height: 55vh;
+        padding: 9vh 0 0 11vw;
+        transform: translateX(0)
+    }
+
+    .nav-links.active::before {
+        opacity: 1;
+        visibility: visible
+    }
+
+    .menu-btn.active {
+        color: #fff!important;
+        background: 0 0
+    }
+
+    .classsvglogo {
+        font-size: 15vw
+    }
+
+    .copytext h2 span {
+        font-size: 15vw;
+        line-height: 1.7;
+        text-align: start;
+    }
+
+    .copytext h2 span:nth-child(1){
+        padding-left:8vw
+    }
+
+     .copytext h2 span:nth-child(2){
+        padding-left:15vw
+    }
+
+     .copytext h2 span:nth-child(3){
+        padding-left:19vw
+    }
+
+      .copytext h2 span:nth-child(4){
+        padding-left:25vw
+    }
+    .company-container {
+        flex-direction: column;
+        gap: 6vw;
+        margin-bottom: 27vw;
+        padding-top: 20vw
+    }
+
+    .company-right {
+        order: 1;
+        width: 100%
+    }
+
+    .company-left {
+        /* order: 2; */
+        width: 100%
+    }
+
+    .company-right h2 {
+        font-size: 8.3vw;
+        white-space: nowrap
+    }
+
+    .company-right h3 {
+        font-size: 5.5vw;
+        flex-wrap: wrap;
+        line-height: .9;
+        margin-bottom: 6vw
+    }
+
+    .company-right h3 a {
+        gap: 1.5vw
+    }
+
+    .company-right p {
+        font-size: 5vw;
+        width: 100%;
+        margin-bottom: 3vw;
+        line-height: 1.1
+    }
+
+    .creative-btn-wrapper a {
+        font-size: 4vw;
+        padding: 8px 15px;
+        font-family: Nova-seven;
+        font-weight: 700;
+        white-space: nowrap
+    }
+
+    .creative-btn-wrapper {
+        flex-wrap: wrap;
+        margin-bottom: 9vw;
+        gap: 6px
+    }
+
+    .lower-card-img {
+        top: 73%;
+        height: auto;
+        width: 41%
+    }
+
+    .left-card-two {
+        height: 100%;
+        width: 100%
+    }
+
+    .left-card-two img {
+        width: 100%;
+        border-radius: 10px
+    }
+
+    .not-found-image {
+        width: 60%
+    }
+
+    .not-found-caption h3 {
+        font-size: 8vw;
+        margin-bottom: 6vw
+    }
+
+    .not-found-caption p {
+        font-size: 5vw;
+        margin: 0 auto 5vw;
+        width: 81%;
+        text-align: center;
+        line-height: 1.4
+    }
+
+    .banner-not-found,.banner-not-found img {
+        width: 100%;
+        height: 100%
+    }
+
+    .not-found-caption .blue_btn .infos {
+        font-size: 5vw;
+        font-family: Nova-seven;
+        font-weight: 700
+    }
+}
+
+@media (min-width: 1441px) and (max-width:1920px) {
+    .left-card-two {
+        height:51vh
+    }
+
+    .lower-card-img {
+        width: 45%;
+        height: 40%;
+        top: 60%
+    }
+
+    .left-card-one {
+        height: 31vh
+    }
+
+    .creative-btn-wrapper {
+        margin-bottom: 1vw
+    }
+
+    .hobbies-content p {
+        width: 500px
+    }
+
+    .hobbies-image {
+        width: 68%
+    }
+
+    .hobbies-content {
+        top: 35vh;
+        left: 22vw
+    }
+
+    .hoby-items {
+        margin-bottom: 30px
+    }
+
+    .hoby-items:last-child {
+        margin-bottom: 0
+    }
+}
+
+@media (min-width: 1280px) and (max-width:1440px) {
+    .left-card-two {
+        height:56vh
+    }
+
+    .lower-card-img {
+        width: 50%;
+        height: 43%;
+        top: 57%
+    }
+
+    .left-card-one {
+        /* height: 34vh; */
+    }
+
+    .creative-btn-wrapper {
+        margin-bottom: 1.5vw
+    }
+
+    .hobbies-content p {
+        width: 480px
+    }
+
+    .hobbies-image {
+        /* width:68%; */
+    }
+
+    .hobbies-content {
+        top: 41vh;
+        left: 22.1vw
+    }
+
+    .hoby-items {
+        margin-bottom: 30px
+    }
+
+    .hoby-items:last-child {
+        margin-bottom: 0
+    }
+}
+
+@media (min-width: 1024px) and (max-width:1279px) {
+    .left-card-two {
+        height:41vh
+    }
+
+    .lower-card-img {
+        width: 55%;
+        height: 40%;
+        top: 60%
+    }
+
+    .left-card-one {
+        height: 25vh
+    }
+
+    .creative-btn-wrapper {
+        margin-bottom: 2vw
+    }
+
+    .hobbies-content p {
+        width: 349px
+    }
+
+    .hobbies-image {
+        width: 68%
+    }
+
+    .hobbies-content {
+        top: 26vh;
+        left: 22vw
+    }
+
+    .hoby-items {
+        margin-bottom: 30px
+    }
+
+    .hoby-items:last-child {
+        margin-bottom: 0
+    }
+
+}
+

@@ -161,8 +161,32 @@ document.addEventListener("DOMContentLoaded", function () {
 
   ScrollTrigger.addEventListener("refresh", () => scroller?.update());
 
-  setTimeout(() => {
+  function refreshScrollers() {
     ScrollTrigger.refresh();
     if (scroller) scroller.update();
-  }, 1000);
+  }
+
+  const allImages = Array.from(document.images);
+  const pendingImages = allImages.filter((img) => !img.complete);
+
+  if (pendingImages.length === 0) {
+    refreshScrollers();
+  } else {
+    let remaining = pendingImages.length;
+    pendingImages.forEach((img) => {
+      const onDone = () => {
+        remaining -= 1;
+        refreshScrollers();
+        if (remaining === 0) {
+          img.removeEventListener("load", onDone);
+          img.removeEventListener("error", onDone);
+        }
+      };
+      img.addEventListener("load", onDone, {once: true});
+      img.addEventListener("error", onDone, {once: true});
+    });
+  }
+
+  window.addEventListener("load", refreshScrollers);
+  setTimeout(refreshScrollers, 1500);
 });
